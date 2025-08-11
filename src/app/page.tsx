@@ -94,10 +94,6 @@ const Home = () => {
                   alt="Raja_Somasundaram"
                   className="object-cover w-full h-full transform hover:scale-110 transition-transform duration-500"
                 />
-
-                {/* Floating Elements */}
-                {/* <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full animate-bounce delay-1000"></div>
-                <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-purple-400 rounded-full animate-bounce delay-1500"></div> */}
               </div>
             </div>
           </div>

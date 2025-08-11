@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+// import { Phone } from "lucide-react";
 
 export const LINKS = {
   Github: "https://github.com/RajaSomasundaram",

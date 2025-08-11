@@ -1,8 +1,8 @@
-import { Download } from "lucide-react";
-import Menubar from "./Menubar";
+// import { Download } from "lucide-react";
+// import Menubar from "./Menubar";
 import SocialsMenu from "./SocialsMenu";
 import Link from "next/link";
-import StarEffect from "@/components/bg-star";
+// import StarEffect from "@/components/bg-star";
 
 const Footer = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Database, Users, Cable, Zap, Smartphone, Globe, Shield } from "lucide-react";
+import { Code, Database, Users, Cable } from "lucide-react";
 import StarEffect from "@/components/bg-star";
 
 const Skils = () => {

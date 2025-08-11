@@ -1,8 +1,8 @@
 import React from "react";
 import { BookOpen, GraduationCap, Briefcase, Heart, Star } from "lucide-react";
 import StarEffect from "@/components/bg-star";
-import Link from "next/link";
-import { Download } from "lucide-react";
+// import Link from "next/link";
+// import { Download } from "lucide-react";
 
 const MyStory = () => {
   const storyTimeline = [

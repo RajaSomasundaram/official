@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      filter: drop-shadow(0 0 4px white);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(0.8);
+      filter: drop-shadow(0 0 2px white);
+    }
+  }
+
+  .twinkle {
+    animation: twinkle 2s infinite ease-in-out;
+  }
+}

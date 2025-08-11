@@ -1,9 +1,7 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enables static HTML export
-  images: {
-    unoptimized: true, // Required for GitHub Pages
-  },
+  output: "export",
 };
 
 module.exports = nextConfig;

@@ -7,7 +7,7 @@ export const LINKS = {
   Email: "mailto:raja2003ss@gmail.com",
   Phone: "tel:+91",
 
-  Resume: "RajaSomasundaram.pdf", // local static file
+  Resume: "resume.pdf", // local static file
   Contact: "/contact", // internal page
 
   Konnectify: "https://konnectify.co",

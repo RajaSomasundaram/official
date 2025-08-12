@@ -2,7 +2,7 @@
 
 import { projectData } from "@/data/projectData";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
@@ -42,22 +42,43 @@ const ProjectBanner = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 flex gap-3">
-                    <Link
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} />
-                    </Link>
-                    <Link
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 transition-colors duration-200"
-                    >
-                      <Github size={16} />
-                    </Link>
+                    {project.liveUrl != null ? (
+                      <link
+                        href={project.liveUrl}
+                        // target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                      >
+                        <ExternalLink size={16} />
+                      </link>
+                    ) : (
+                      <button
+                        disabled
+                        className="bg-gray-200 text-gray-400 p-2 rounded-full cursor-not-allowed"
+                        title="Live link not available"
+                      >
+                        <ExternalLink size={16} />
+                      </button>
+                    )}
+
+                    {project.githubUrl != null ? (
+                      <link
+                        href={project.githubUrl}
+                        // target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 transition-colors duration-200"
+                      >
+                        <Github size={16} />
+                      </link>
+                    ) : (
+                      <button
+                        disabled
+                        className="bg-gray-300 text-gray-500 p-2 rounded-full cursor-not-allowed"
+                        title="GitHub link not available"
+                      >
+                        <Github size={16} />
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -109,20 +130,20 @@ const ProjectBanner = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
+              <link
                 href="/projects"
                 className="group px-8 py-4 bg-green-500 text-white rounded-lg hover:bg-purple-700 font-semibold transition-all duration-200 flex items-center gap-3"
               >
                 View All Projects
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
+              </link>
 
-              <Link
+              <link
                 href="/contact"
                 className="px-8 py-4 bg-transparent border-2 border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-white font-semibold transition-all duration-200"
               >
                 Start a Project
-              </Link>
+              </link>
             </div>
           </div>
         </div>

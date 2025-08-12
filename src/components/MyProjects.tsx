@@ -30,22 +30,42 @@ const MyProjects = () => {
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 flex gap-4">
-                  <Link
-                    href={item.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-gray-800 p-3 rounded-full hover:bg-gray-100 transition-colors duration-200"
-                  >
-                    <ExternalLink size={20} />
-                  </Link>
-                  <Link
-                    href={item.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition-colors duration-200"
-                  >
-                    <Github size={20} />
-                  </Link>
+                  {item.liveUrl != null ? (
+                    <Link
+                      href={item.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white text-gray-800 p-3 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                    >
+                      <ExternalLink size={20} />
+                    </Link>
+                  ) : (
+                    <button
+                      disabled
+                      className="bg-gray-200 text-gray-400 p-3 rounded-full cursor-not-allowed"
+                      title="Live link not available"
+                    >
+                      <ExternalLink size={20} />
+                    </button>
+                  )}
+                  {item.githubUrl != null ? (
+                    <Link
+                      href={item.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition-colors duration-200"
+                    >
+                      <Github size={20} />
+                    </Link>
+                  ) : (
+                    <button
+                      disabled
+                      className="bg-gray-300 text-gray-500 p-3 rounded-full cursor-not-allowed"
+                      title="GitHub link not available"
+                    >
+                      <Github size={20} />
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -84,24 +104,32 @@ const MyProjects = () => {
               {/* Project Actions */}
               <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <div className="flex gap-3">
-                  <Link
-                    href={item.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-green-500 hover:text-purple-700 font-semibold text-sm transition-colors duration-200"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </Link>
-                  <Link
-                    href={item.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-semibold text-sm transition-colors duration-200"
-                  >
-                    <Github size={16} />
-                    Source Code
-                  </Link>
+                  {item.liveUrl != null ? (
+                    <Link
+                      href={item.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-green-500 hover:text-purple-700 font-semibold text-sm transition-colors duration-200"
+                    >
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </Link>
+                  ) : (
+                    <span className="text-gray-400 text-sm">Live Demo</span>
+                  )}
+                  {item.githubUrl != null ? (
+                    <Link
+                      href={item.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-semibold text-sm transition-colors duration-200"
+                    >
+                      <Github size={16} />
+                      Source Code
+                    </Link>
+                  ) : (
+                    <span className="text-gray-400 text-sm">Source Code</span>
+                  )}
                 </div>
 
                 {/* Project Status */}

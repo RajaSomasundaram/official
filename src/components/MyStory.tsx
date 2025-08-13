@@ -1,5 +1,5 @@
 import React from "react";
-import { BookOpen, GraduationCap, Briefcase, Heart, Star } from "lucide-react";
+import { BookOpen, GraduationCap, Heart, Star } from "lucide-react";
 import StarEffect from "@/components/bg-star";
 // import Link from "next/link";
 // import { Download } from "lucide-react";
@@ -26,8 +26,8 @@ const MyStory = () => {
       year: "2023 - 2025",
       title: "Postgraduate Studies",
       description:
-        "Pursuing a Master of Computer Applications (MCA) at Sengunthar Engineering College, Erode, focusing on advanced software engineering, integration solutions, and scalable web application development.",
-      icon: Briefcase,
+        "Completed a Master of Computer Applications (MCA) at Sengunthar Engineering College, Erode, focusing on advanced software engineering, integration solutions, and scalable web application development.",
+      icon: GraduationCap,
       color: "from-green-500 to-green-600",
     },
   ];

@@ -12,33 +12,33 @@ const Myplace = () => {
             <Marquee speed={30}>
               <div className="flex gap-5 items-center">
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">Responsive Design</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">HTML5/CSS3 Mastery</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">UI/UX Expertise</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <span></span>
               </div>
             </Marquee>
             <Marquee direction="right" speed={30}>
               <div className="flex gap-5 items-center">
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">JavaScript Proficiency</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">Collaborative Team Player</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">Design Tools Mastery</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <span></span>
               </div>
             </Marquee>
             <Marquee speed={30}>
               <div className="flex gap-5 items-center">
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">Keeping Abreast of Trends</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">Problem Solving</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <div className="bg-gray-800 text-white py-2 px-4 rounded-lg">Attention to Detail</div>
-                <Star className="text-green-500" />
+                <Star className="text-emerald-500" />
                 <span></span>
               </div>
             </Marquee>

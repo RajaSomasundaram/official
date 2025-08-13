@@ -74,16 +74,16 @@ const MyProjects = () => {
             <div className="p-6 lg:p-8">
               {/* Project Number */}
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm font-semibold text-green-500 bg-purple-50 px-3 py-1 rounded-full">
+                <span className="text-sm font-semibold text-emerald-500 bg-purple-50 px-3 py-1 rounded-full">
                   Project {String(index + 1).padStart(2, "0")}
                 </span>
                 <span className="text-xs text-gray-500 font-medium">{index === 0 ? "Latest" : "Featured"}</span>
               </div>
 
               {/* Project Title */}
-              <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3 group-hover:text-green-500 transition-colors duration-300">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3 group-hover:text-emerald-500 transition-colors duration-300">
                 {item.title}
-                <span className="text-green-500">.</span>
+                <span className="text-emerald-500">.</span>
               </h3>
 
               {/* Project Description */}
@@ -109,7 +109,7 @@ const MyProjects = () => {
                       href={item.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-green-500 hover:text-purple-700 font-semibold text-sm transition-colors duration-200"
+                      className="flex items-center gap-2 text-emerald-500 hover:text-purple-700 font-semibold text-sm transition-colors duration-200"
                     >
                       <ExternalLink size={16} />
                       Live Demo
@@ -134,15 +134,11 @@ const MyProjects = () => {
 
                 {/* Project Status */}
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
                   <span className="text-xs text-gray-500 font-medium">{item.status}</span>
                 </div>
               </div>
             </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute top-4 right-4 w-16 h-16 bg-purple-100 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-0 group-hover:scale-100"></div>
-            <div className="absolute bottom-4 left-4 w-8 h-8 bg-purple-200 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 transform scale-0 group-hover:scale-100 delay-100"></div>
           </div>
         ))}
       </div>

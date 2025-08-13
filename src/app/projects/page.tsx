@@ -53,26 +53,26 @@ const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               {/* <div className="bg-sky-100 p-6 rounded-xl shadow-lg border-2 border-emerald-600">
                 <div className="flex items-center gap-3 mb-3">
-                  <Sparkles className="text-green-500" size={24} />
+                  <Sparkles className="text-emerald-500" size={24} />
                   <h3 className="text-lg font-semibold text-gray-800">Projects Completed</h3>
                 </div>
-                <p className="text-3xl font-bold text-green-500">3+</p>
+                <p className="text-3xl font-bold text-emerald-500">3+</p>
               </div> */}
 
               <div className="bg-sky-100 p-6 rounded-xl shadow-lg border-2 border-emerald-600">
                 <div className="flex items-center gap-3 mb-3">
-                  <Zap className="text-green-500" size={24} />
+                  <Zap className="text-emerald-500" size={24} />
                   <h3 className="text-lg font-semibold text-gray-800">Technologies</h3>
                 </div>
-                <p className="text-3xl font-bold text-green-500">8+</p>
+                <p className="text-3xl font-bold text-emerald-500">8+</p>
               </div>
 
               <div className="bg-sky-100 p-6 rounded-xl shadow-lg border-2 border-emerald-600">
                 <div className="flex items-center gap-3 mb-3">
-                  <Code className="text-green-500" size={24} />
+                  <Code className="text-emerald-500" size={24} />
                   <h3 className="text-lg font-semibold text-gray-800">Years Experience</h3>
                 </div>
-                <p className="text-3xl font-bold text-green-500">2.5+</p>
+                <p className="text-3xl font-bold text-emerald-500">2.5+</p>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Projects = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 <div className="flex items-start gap-3">
-                  <Lock className="text-green-500 mt-1 flex-shrink-0" size={20} />
+                  <Lock className="text-emerald-500 mt-1 flex-shrink-0" size={20} />
                   <div>
                     <h3 className="font-semibold text-sky-100 mb-1">Client Privacy</h3>
                     <p className="text-sm text-sky-100">
@@ -113,7 +113,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Shield className="text-green-500 mt-1 flex-shrink-0" size={20} />
+                  <Shield className="text-emerald-500 mt-1 flex-shrink-0" size={20} />
                   <div>
                     <h3 className="font-semibold text-sky-100 mb-1">Security Protocols</h3>
                     <p className="text-sm text-sky-100">
@@ -124,7 +124,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Code className="text-green-500 mt-1 flex-shrink-0" size={20} />
+                  <Code className="text-emerald-500 mt-1 flex-shrink-0" size={20} />
                   <div>
                     <h3 className="font-semibold text-sky-100 mb-1">Complex Integrations</h3>
                     <p className="text-sm text-sky-100">
@@ -135,7 +135,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Zap className="text-green-500 mt-1 flex-shrink-0" size={20} />
+                  <Zap className="text-emerald-500 mt-1 flex-shrink-0" size={20} />
                   <div>
                     <h3 className="font-semibold text-sky-100 mb-1">Active Development</h3>
                     <p className="text-sm text-sky-100">

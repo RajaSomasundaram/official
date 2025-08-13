@@ -1,34 +1,34 @@
-import KonnectifyWorkflow from "../../public/assets/projects/Konnectify_Workflow.png";
-import Netowrked from "../../public/assets/projects/networked.png";
-import waveBible from "../../public/assets/projects/waveBibleApp.png";
+import Konnectify_ETL_Tool from "../../public/assets/ETL Tool.png";
+import Agrocaste from "../../public/assets/agrocast-analytics.jpg";
+import Wheather from "../../public/assets/Wheather-Prediction.jpeg";
 
 export const projectData = [
   {
-    image: KonnectifyWorkflow,
-    title: "Konnectify (features)",
+    image: Konnectify_ETL_Tool,
+    title: "ETL Tool",
     description:
-      "Developed and maintained an Integration Platform as a Service (iPaaS) in Next.js and Node.js, enabling SaaS integrations with triggers, actions, and event-driven workflows. Delivered real-time data sync between applications like Slack, ZohoBooks, and Google Sheets.",
-    technologies: ["React Native", "Expo", "Firebase", "Stripe", "Tailwind CSS"],
-    liveUrl: null,
+      "Built a cloud-based ETL pipeline in Node.js deployed on Google Cloud Run, enabling CSV data migration between SaaS platforms with dynamic field mapping, rate-limit control, and scalable processing. Reduced migration time by 40%.",
+    technologies: ["React Native", "Javascript", "Firebase", "Google Cloud (GCP)", "Tailwind CSS"],
+    liveUrl: "https://etl-frontend-3ddd3qo4lq-uc.a.run.app/jobs",
     githubUrl: null,
     status: "Completed",
   },
   {
-    image: Netowrked,
-    title: "Networked AI",
+    image: Agrocaste,
+    title: "Agrocaste",
     description:
-      "An AI-powered platform designed to simplify event hosting, management, and networking for both organizers and attendees. Features built-in ticketing and payment processing, personalized event discovery, digital business card exchange, and real‑time updates across web and mobile.",
-    technologies: ["React Iconic", "TypeScript", "Tailwind CSS", "Firebase", "Stripe", "Apple Pay"],
+      "Designed and implemented a smart farming solution using IoT sensors and Raspberry Pi to capture real-time field data and transmit it to a Firebase-linked mobile application, enabling farmers to make data-driven decisions for improved crop yield",
+    technologies: ["IOT", "Android Studio", "Firebase"],
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/RajaSomasundaram/Agrocasture",
     status: "Completed",
   },
   {
-    image: waveBible,
-    title: "Waves: Bible Verse",
+    image: Wheather,
+    title: "Wheather Prediction",
     description:
-      "A spiritual growth companion that delivers personalized, curated Bible verses and real‑time support directly to your home and lock screens. Equipped with an AI‑powered chatbot that answers questions, explains scripture, and recommends devotionals tailored to your life journey.",
-    technologies: ["React Navite", "TypeScript", "Widgets", "Firebase", "Open AI", "in App Purchase"],
+      "Developed a machine learning model using historical climate data to predict seasonal changes such as summer and rainy periods, analysing temperature, humidity, and rainfall patterns to support agriculture and weather-dependent planning.",
+    technologies: ["AI & Ml", "Python"],
     liveUrl: null,
     githubUrl: null,
     status: "Completed",

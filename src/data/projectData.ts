@@ -30,7 +30,7 @@ export const projectData = [
       "Developed a machine learning model using historical climate data to predict seasonal changes such as summer and rainy periods, analysing temperature, humidity, and rainfall patterns to support agriculture and weather-dependent planning.",
     technologies: ["AI & Ml", "Python"],
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/RajaSomasundaram/Weather-Prediction",
     status: "Completed",
   },
 ];
